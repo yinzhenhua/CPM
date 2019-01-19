@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b86ad22f-155c-43f7-9254-fa88329addfc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CommonPowerManager.sln" beforeDir="false" afterPath="$PROJECT_DIR$/CommonPowerManager.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Domain.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Project.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Project.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMAPI/Controllers/ValuesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PMAPI/Controllers/ValuesController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMAPI/PMAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PMAPI/PMAPI.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PMAPI/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMAPI/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/PMAPI/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMAPI/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PMAPI/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMAPI/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/PMAPI/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMAPI/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/PMAPI/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMCore/PMRepository.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PMCore/PMRepository.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMService/PMService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PMService/PMService.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/Models/ErrorViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/Models/ErrorViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/PMWeb.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/PMWeb.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/Views/CodeMap/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/Views/CodeMap/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/Views/Home/About.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/Views/Home/About.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/Views/Home/Contact.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/Views/Home/Contact.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/Views/Home/Privacy.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/Views/Home/Privacy.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/Views/Shared/Error.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/Views/Shared/Error.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/Views/Shared/_CookieConsentPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/Views/Shared/_CookieConsentPartial.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/Views/Shared/_ValidationScriptsPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/Views/Shared/_ValidationScriptsPartial.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/Views/_ViewImports.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/Views/_ViewImports.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/Views/_ViewStart.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/Views/_ViewStart.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/wwwroot/css/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/wwwroot/lib/bootstrap/.bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/wwwroot/lib/bootstrap/.bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/wwwroot/lib/bootstrap/dist/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/wwwroot/lib/bootstrap/dist/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/wwwroot/lib/jquery-validation-unobtrusive/.bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/wwwroot/lib/jquery-validation-unobtrusive/.bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/wwwroot/lib/jquery-validation/.bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/wwwroot/lib/jquery-validation/.bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/wwwroot/lib/jquery/.bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/wwwroot/lib/jquery/.bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/wwwroot/lib/jquery/dist/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/wwwroot/lib/jquery/dist/jquery.min.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1291774396">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cs" value="1" />
+          <entry key="cshtml" value="5" />
+          <entry key="sln" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="1" />
+          <entry key="Razor" value="5" />
+          <entry key="Solution File" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="217" />
+          <entry key="cshtml" value="486" />
+          <entry key="txt" value="37" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="217" />
+          <entry key="PLAIN_TEXT" value="37" />
+          <entry key="Razor" value="486" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PMWeb/Controllers/CodeMapController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <marker date="1547891025157" expanded="true" signature="6:270" ph="..." />
+                <marker date="1547891025157" expanded="true" signature="413:1356" ph="{...}" />
+                <marker date="1547891025157" expanded="true" signature="463:1354" ph="{...}" />
+                <marker date="1547891025157" expanded="true" signature="603:681" ph="{...}" />
+                <marker date="1547891025157" expanded="true" signature="750:937" ph="{...}" />
+                <marker date="1547891025157" expanded="true" signature="1035:1348" ph="{...}" />
+                <marker date="1547891025157" expanded="true" signature="1081:1165" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PMWeb/Views/CodeMap/Index.cshtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+              <folding>
+                <marker date="1547894123145" expanded="true" signature="74:577" ph="@..." />
+                <marker date="1547894123145" expanded="true" signature="140:577" ph="{...}" />
+                <marker date="1547894123145" expanded="true" signature="231:467" ph="&lt;div.../&gt;" />
+                <marker date="1547894123145" expanded="true" signature="472:575" ph="&lt;div.../&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="yinzhenhua" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/PMWeb/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PMWeb/Controllers/CodeMapController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PMWeb/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PMWeb/Views/CodeMap/Index.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PMWeb/Views/Home/About.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PMWeb/Views/Shared/_ValidationScriptsPartial.cshtml" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/PMWeb/Controllers/CodeMapController.cs" />
+        <option value="$PROJECT_DIR$/PMWeb/Views/CodeMap/Index.cshtml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="777" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <autoscrollToSource SolutionExplorer="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="CommonPowerManager" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/PMWeb/bin/Debug/netcoreapp2.1/PMWeb.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PMWeb" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs>
+        <env name="ASPNETCORE_ENVIRONMENT" value="Development" />
+        <env name="ASPNETCORE_URLS" value="https://localhost:5001;http://localhost:5000" />
+      </envs>
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/PMWeb/PMWeb.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.1" />
+      <browser start="true" url="https://localhost:5001" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b86ad22f-155c-43f7-9254-fa88329addfc" name="Default Changelist" comment="" />
+      <created>1547890335037</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1547890335037</updated>
+      <workItem from="1547890336509" duration="1373000" />
+      <workItem from="1547894342371" duration="665000" />
+    </task>
+    <task id="LOCAL-00001" summary="项目初始提交">
+      <created>1547895767032</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1547895767032</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2038000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1280" height="777" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2536349" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32876712" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" />
+      <window_info anchor="bottom" id="REST Client" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="14" side_tool="true" visible="true" weight="0.35036495" />
+      <window_info anchor="bottom" id="Build" order="15" weight="0.32876712" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="项目初始提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="项目初始提交" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/PMWeb/Controllers/CodeMapController.cs</url>
+          <line>34</line>
+          <properties documentPath="$PROJECT_DIR$/PMWeb/Controllers/CodeMapController.cs" initialLine="34">
+            <startOffsets>
+              <option value="1058" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1081" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/PMWeb/Views/Home/About.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1547889289928" expanded="true" signature="0:37" ph="@..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PMWeb/Views/Home/Index.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+          <folding>
+            <marker date="1547889289954" expanded="true" signature="0:41" ph="@..." />
+            <marker date="1547889289954" expanded="true" signature="43:2451" ph="&lt;div.../&gt;" />
+            <marker date="1547889289954" expanded="true" signature="134:377" ph="&lt;ol.../&gt;" />
+            <marker date="1547889289954" expanded="true" signature="382:1994" ph="&lt;div.../&gt;" />
+            <marker date="1547889289954" expanded="true" signature="434:924" ph="&lt;div.../&gt;" />
+            <marker date="1547889289954" expanded="true" signature="556:909" ph="&lt;div.../&gt;" />
+            <marker date="1547889289954" expanded="true" signature="617:890" ph="&lt;p.../&gt;" />
+            <marker date="1547889289954" expanded="true" signature="716:869" ph="&lt;a.../&gt;" />
+            <marker date="1547889289954" expanded="true" signature="933:1446" ph="&lt;div.../&gt;" />
+            <marker date="1547889289954" expanded="true" signature="1054:1431" ph="&lt;div.../&gt;" />
+            <marker date="1547889289954" expanded="true" signature="1115:1412" ph="&lt;p.../&gt;" />
+            <marker date="1547889289954" expanded="true" signature="1238:1391" ph="&lt;a.../&gt;" />
+            <marker date="1547889289954" expanded="true" signature="1455:1983" ph="&lt;div.../&gt;" />
+            <marker date="1547889289954" expanded="true" signature="1578:1968" ph="&lt;div.../&gt;" />
+            <marker date="1547889289954" expanded="true" signature="1639:1949" ph="&lt;p.../&gt;" />
+            <marker date="1547889289954" expanded="true" signature="1775:1928" ph="&lt;a.../&gt;" />
+            <marker date="1547889289954" expanded="true" signature="1999:2220" ph="&lt;a.../&gt;" />
+            <marker date="1547889289954" expanded="true" signature="2225:2444" ph="&lt;a.../&gt;" />
+            <marker date="1547889289954" expanded="true" signature="2453:4740" ph="&lt;div.../&gt;" />
+            <marker date="1547889289954" expanded="true" signature="2475:2732" ph="&lt;div.../&gt;" />
+            <marker date="1547889289954" expanded="true" signature="2540:2721" ph="&lt;ul.../&gt;" />
+            <marker date="1547889289954" expanded="true" signature="2737:3410" ph="&lt;div.../&gt;" />
+            <marker date="1547889289954" expanded="true" signature="2792:3399" ph="&lt;ul.../&gt;" />
+            <marker date="1547889289954" expanded="true" signature="3415:4298" ph="&lt;div.../&gt;" />
+            <marker date="1547889289954" expanded="true" signature="3472:4287" ph="&lt;ul.../&gt;" />
+            <marker date="1547889289954" expanded="true" signature="4303:4733" ph="&lt;div.../&gt;" />
+            <marker date="1547889289954" expanded="true" signature="4368:4722" ph="&lt;ul.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PMWeb/Views/Shared/_ValidationScriptsPartial.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1547889289967" expanded="true" signature="0:221" ph="&lt;environment.../&gt;" />
+            <marker date="1547889289967" expanded="true" signature="222:1153" ph="&lt;environment.../&gt;" />
+            <marker date="1547889289967" expanded="true" signature="262:656" ph="&lt;script.../&gt;" />
+            <marker date="1547889289967" expanded="true" signature="661:1138" ph="&lt;script.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PMWeb/Views/Shared/_Layout.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1547889289965" expanded="true" signature="16:3615" ph="&lt;html.../&gt;" />
+            <marker date="1547889289965" expanded="true" signature="27:899" ph="&lt;head.../&gt;" />
+            <marker date="1547889289965" expanded="true" signature="207:409" ph="&lt;environment.../&gt;" />
+            <marker date="1547889289965" expanded="true" signature="418:887" ph="&lt;environment.../&gt;" />
+            <marker date="1547889289965" expanded="true" signature="904:3607" ph="&lt;body.../&gt;" />
+            <marker date="1547889289965" expanded="true" signature="919:2052" ph="&lt;nav.../&gt;" />
+            <marker date="1547889289965" expanded="true" signature="984:2037" ph="&lt;div.../&gt;" />
+            <marker date="1547889289965" expanded="true" signature="1024:1566" ph="&lt;div.../&gt;" />
+            <marker date="1547889289965" expanded="true" signature="1072:1436" ph="&lt;button.../&gt;" />
+            <marker date="1547889289965" expanded="true" signature="1583:2018" ph="&lt;div.../&gt;" />
+            <marker date="1547889289965" expanded="true" signature="1642:1995" ph="&lt;ul.../&gt;" />
+            <marker date="1547889289965" expanded="true" signature="2112:2294" ph="&lt;div.../&gt;" />
+            <marker date="1547889289965" expanded="true" signature="2206:2279" ph="&lt;footer.../&gt;" />
+            <marker date="1547889289965" expanded="true" signature="2304:2574" ph="&lt;environment.../&gt;" />
+            <marker date="1547889289965" expanded="true" signature="2583:3543" ph="&lt;environment.../&gt;" />
+            <marker date="1547889289965" expanded="true" signature="2631:2999" ph="&lt;script.../&gt;" />
+            <marker date="1547889289965" expanded="true" signature="3012:3441" ph="&lt;script.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PMWeb/Controllers/CodeMapController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <marker date="1547891025157" expanded="true" signature="6:270" ph="..." />
+            <marker date="1547891025157" expanded="true" signature="413:1356" ph="{...}" />
+            <marker date="1547891025157" expanded="true" signature="463:1354" ph="{...}" />
+            <marker date="1547891025157" expanded="true" signature="603:681" ph="{...}" />
+            <marker date="1547891025157" expanded="true" signature="750:937" ph="{...}" />
+            <marker date="1547891025157" expanded="true" signature="1035:1348" ph="{...}" />
+            <marker date="1547891025157" expanded="true" signature="1081:1165" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CommonPowerManager.sln">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PMWeb/Views/CodeMap/Index.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+          <folding>
+            <marker date="1547894123145" expanded="true" signature="74:577" ph="@..." />
+            <marker date="1547894123145" expanded="true" signature="140:577" ph="{...}" />
+            <marker date="1547894123145" expanded="true" signature="231:467" ph="&lt;div.../&gt;" />
+            <marker date="1547894123145" expanded="true" signature="472:575" ph="&lt;div.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
