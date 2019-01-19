@@ -1,0 +1,15 @@
+@model PMService.ViewModels.CodeMap.CodeMapViewModel4Add
+
+<h2>新增系统字典</h2>
+@using (Html.BeginForm("SaveCodeMap", "CodeMap", FormMethod.Post))
+{
+    @Html.ValidationSummary("处理系统消息时发生异常", new{@class="validation-summary-errors"})
+    <div class="form-group">
+        @Html.LabelFor(x=>x.CodeName)
+        @Html.TextBoxFor(x=>x.CodeName, new{@class="form-control"})
+        @Html.ValidationMessageFor(x=>x.CodeName, "can not be empty", new{@class="has-error"})
+    </div>
+    <div class="btn-group">
+        <input type="submit" class="btn panel-primary" value="保存" />
+    </div>
+}

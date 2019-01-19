@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+    <Folder Include="Services\" />
+    <Folder Include="DTOs\" />
+    <Folder Include="Interfaces\CodeMapServices\" />
+    <Folder Include="Services\CodeMapServices\" />
+    <Folder Include="DTOs\CodeMap\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="ViewModels\CodeMap\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\PMCore\PMRepository.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="ViewModels\CodeMap\CodeMapViewModel4Add.config" />
+  </ItemGroup>
+</Project>
