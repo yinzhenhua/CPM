@@ -15,10 +15,13 @@ namespace PMWeb.Controllers
     public class CodeMapController : Controller
     {
         private readonly IGetCategories _getCategoriesService;
+        private readonly IAddService4CodeMap _addCategoryService;
 
-        public CodeMapController(IGetCategories getCategoriesService)
+        public CodeMapController(IGetCategories getCategoriesService,
+            IAddService4CodeMap addCategoryService)
         {
             _getCategoriesService = getCategoriesService;
+            _addCategoryService = addCategoryService;
         }
 
         // GET: /<controller>/
@@ -30,15 +33,11 @@ namespace PMWeb.Controllers
         }
 
         [HttpPost]
-        public IActionResult SaveCodeMap([FromBody]CodeMapViewModel4Add item)
+        [ValidateAntiForgeryToken]
+        public IActionResult SaveCode(CodeMapViewModel4Add item)
         {
-            if (ModelState.IsValid)
-            {
-                return RedirectToAction("Index", item);
-            }
-            var categories = _getCategoriesService.GetCategories();
-            ViewData["categories"] = new SelectList(categories);
-            return View("Index", item);
+            _addCategoryService.AddCodeMap(item);
+            return RedirectToAction("Index", item);
         }
     }
 }
