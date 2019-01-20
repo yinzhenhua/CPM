@@ -45,11 +45,13 @@ namespace PMWeb
                 options.UseNpgsql(Configuration.GetConnectionString("Default"),
                                   b => b.MigrationsAssembly("PMAPI"));
             });
-            services.AddScoped<IUnitOfWork<DataContext>, UnitOfWork<DataContext>>();
-            services.AddScoped<IRepository4CodeMap, Repository4CodeMap<DataContext>>();
-            services.AddScoped<IAddService4CodeMap, ModifyService4CodeMap>();
-            services.AddScoped<IGetCategories, FetchService4CodeMap>();
-            services.AddScoped<IGetCodeDetailService, FetchService4CodeMap>();
+            services.AddScoped<IUnitOfWork<DataContext>, UnitOfWork<DataContext>>()
+                .AddScoped<IRepository4CodeMap, Repository4CodeMap<DataContext>>()
+                .AddScoped<IAddService4CodeMap, ModifyService4CodeMap>()
+                .AddScoped<IGetCategories, FetchService4CodeMap>()
+                .AddScoped<IGetCodeDetailService, FetchService4CodeMap>()
+                .AddScoped<IGetCodeMapService, FetchService4CodeMap>()
+                .AddScoped<IUpdateCodeStatusService, ModifyService4CodeMap>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

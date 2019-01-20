@@ -7,7 +7,7 @@ using PMService.ViewModels.CodeMap;
 
 namespace PMService.Services.CodeMapServices
 {
-    public class ModifyService4CodeMap : IAddService4CodeMap
+    public class ModifyService4CodeMap : IAddService4CodeMap, IUpdateCodeStatusService
     {
         private readonly IRepository4CodeMap _codeMapRepository;
 
@@ -48,6 +48,18 @@ namespace PMService.Services.CodeMapServices
                 Status = CodeStatus.Active
             };
             _codeMapRepository.Add(code);
+        }
+
+        public void UpdateStatus(string key, CodeStatus status)
+        {
+            var code = _codeMapRepository.Find(key);
+            code.Status = status;
+            code.UpdatedOn = DateTime.Now;
+            if (status == CodeStatus.InActive)
+            {
+                code.RemovedOn=DateTime.Now;
+            }
+            _codeMapRepository.Update(code);
         }
     }
 }

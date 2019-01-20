@@ -18,23 +18,34 @@ namespace PMWeb.Controllers
     {
         private readonly IGetCategories _getCategoriesService;
         private readonly IAddService4CodeMap _addCategoryService;
+        private readonly IGetCodeMapService _getCodeMapService;
+        private readonly IUpdateCodeStatusService _updateCodeStatusService;
         private readonly IUnitOfWork<DataContext> _context;
 
         public CodeMapController(IGetCategories getCategoriesService,
             IAddService4CodeMap addCategoryService,
-            IUnitOfWork<DataContext> context)
+            IUnitOfWork<DataContext> context,
+            IGetCodeMapService getCodeMapService,
+            IUpdateCodeStatusService updateCodeStatusService)
         {
             _getCategoriesService = getCategoriesService;
             _addCategoryService = addCategoryService;
+            _getCodeMapService = getCodeMapService;
+            _updateCodeStatusService = updateCodeStatusService;
             _context = context;
         }
 
-        // GET: /<controller>/
         public IActionResult Index()
+        {
+            var codeMap = _getCodeMapService.Get();
+            return View("Index", codeMap);
+        }
+        // GET: /<controller>/
+        public IActionResult CreateCode()
         {
             var categories = _getCategoriesService.GetCategories();
             ViewData["categories"] = categories;
-            return View("Index");
+            return View("Create");
         }
 
         [HttpPost]
@@ -43,6 +54,22 @@ namespace PMWeb.Controllers
             _addCategoryService.AddCodeMap(item);
             _context.Commit();
             return RedirectToAction("Index", item);
+        }
+
+        [HttpGet]
+        public IActionResult InActive(string key)
+        {
+            _updateCodeStatusService.UpdateStatus(key, CodeStatus.InActive);
+            _context.Commit();
+            return RedirectToAction("Index");
+        }
+        
+        [HttpGet]
+        public IActionResult Active(string key)
+        {
+            _updateCodeStatusService.UpdateStatus(key,CodeStatus.Active);
+            _context.Commit();
+            return RedirectToAction("Index");
         }
 
         protected override void Dispose(bool disposing)

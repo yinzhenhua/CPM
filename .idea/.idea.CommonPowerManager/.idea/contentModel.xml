@@ -84,6 +84,8 @@
             <e p="IAddService4CodeMap.cs" t="Include" />
             <e p="IGetCategories.cs" t="Include" />
             <e p="IGetCodeDetailService.cs" t="Include" />
+            <e p="IGetCodeMapService.cs" t="Include" />
+            <e p="IUpdateCodeStatusService.cs" t="Include" />
           </e>
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -103,6 +105,7 @@
         <e p="ViewModels" t="Include">
           <e p="CodeMap" t="Include">
             <e p="CodeMapViewModel4Add.cs" t="Include" />
+            <e p="CodeMapViewModel4List.cs" t="Include" />
           </e>
         </e>
       </e>
@@ -134,6 +137,7 @@
           <e p="_ViewImports.cshtml" t="Include" />
           <e p="_ViewStart.cshtml" t="Include" />
           <e p="CodeMap" t="Include">
+            <e p="Create.cshtml" t="Include" />
             <e p="Index.cshtml" t="Include" />
           </e>
           <e p="Home" t="Include">
