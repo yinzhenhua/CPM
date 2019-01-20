@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Domain;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using PMRepository;
 using PMService.Interfaces.CodeMapServices;
 using PMService.ViewModels.CodeMap;
 using PMWeb.Models;
@@ -16,28 +18,37 @@ namespace PMWeb.Controllers
     {
         private readonly IGetCategories _getCategoriesService;
         private readonly IAddService4CodeMap _addCategoryService;
+        private readonly IUnitOfWork<DataContext> _context;
 
         public CodeMapController(IGetCategories getCategoriesService,
-            IAddService4CodeMap addCategoryService)
+            IAddService4CodeMap addCategoryService,
+            IUnitOfWork<DataContext> context)
         {
             _getCategoriesService = getCategoriesService;
             _addCategoryService = addCategoryService;
+            _context = context;
         }
 
         // GET: /<controller>/
         public IActionResult Index()
         {
             var categories = _getCategoriesService.GetCategories();
-            ViewData["categories"] = new SelectList(categories);
+            ViewData["categories"] = categories;
             return View("Index");
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public IActionResult SaveCode(CodeMapViewModel4Add item)
         {
             _addCategoryService.AddCodeMap(item);
+            _context.Commit();
             return RedirectToAction("Index", item);
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            base.Dispose(disposing);
+            _context?.Dispose();
         }
     }
 }
