@@ -6,6 +6,7 @@
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="CommonPowerManager.sln" t="IncludeFlat" />
       <e p="Domain" t="IncludeRecursive">
+        <e p="ActionGroup.cs" t="Include" />
         <e p="BaseEntity.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="CodeMap.cs" t="Include" />
@@ -20,6 +21,11 @@
           </e>
         </e>
         <e p="Project.cs" t="Include" />
+        <e p="ProjectAction.cs" t="Include" />
+        <e p="ProjectMenu.cs" t="Include" />
+        <e p="ProjectRole.cs" t="Include" />
+        <e p="RoleAction.cs" t="Include" />
+        <e p="SecurityKey.cs" t="Include" />
       </e>
       <e p="packages" t="ExcludeRecursive" />
       <e p="PMAPI" t="IncludeRecursive">
@@ -33,6 +39,10 @@
         <e p="Migrations" t="Include">
           <e p="20190117012331_initdb.cs" t="Include" />
           <e p="20190117012331_initdb.Designer.cs" t="Include" />
+          <e p="20190121003412_addproject.cs" t="Include" />
+          <e p="20190121003412_addproject.Designer.cs" t="Include" />
+          <e p="20190121011136_addmenus.cs" t="Include" />
+          <e p="20190121011136_addmenus.Designer.cs" t="Include" />
           <e p="DataContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -55,6 +65,7 @@
         <e p="IRepositories" t="Include">
           <e p="IRepository.cs" t="Include" />
           <e p="IRepository4CodeMap.cs" t="Include" />
+          <e p="IRepository4Project.cs" t="Include" />
         </e>
         <e p="IUnitOfWork.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
@@ -68,6 +79,7 @@
         <e p="Repositories" t="Include">
           <e p="Repository.cs" t="Include" />
           <e p="Repository4CodeMap.cs" t="Include" />
+          <e p="Repository4Project.cs" t="Include" />
         </e>
         <e p="UnitOfWork.cs" t="Include" />
       </e>
@@ -117,6 +129,7 @@
           <e p="CodeMapController.cs" t="Include" />
           <e p="HomeController.cs" t="Include" />
         </e>
+        <e p="Infrastructure" t="Include" />
         <e p="Models" t="Include">
           <e p="ErrorViewModel.cs" t="Include" />
         </e>

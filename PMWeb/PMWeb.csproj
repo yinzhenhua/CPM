@@ -14,4 +14,8 @@
     <ProjectReference Include="..\PMCore\PMRepository.csproj" />
     <ProjectReference Include="..\PMService\PMService.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Infrastructure"/>
+  </ItemGroup>
 </Project>

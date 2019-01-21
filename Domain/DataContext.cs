@@ -5,10 +5,12 @@ namespace Domain
 {
     public class DataContext:DbContext
     {
-        public DataContext(DbContextOptions<DataContext> contextOptions):base(contextOptions)
+        public DataContext(DbContextOptions contextOptions):base(contextOptions)
         {
         }
 
         public virtual DbSet<CodeMap> CodeMaps { get; set; }
+        
+        public virtual DbSet<Project> Projects { get; set; }
     }
 }

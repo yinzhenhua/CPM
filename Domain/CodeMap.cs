@@ -12,10 +12,6 @@ namespace Domain
 {
     public class CodeMap:BaseEntity
     {
-        public CodeMap()
-        {
-        }
-
         /// <summary>
         /// 对应的Code，数字表示具体的Code信息
         /// </summary>
@@ -64,12 +60,6 @@ namespace Domain
         /// <value>The name of the english.</value>
         [StringLength(256)]
         public string Description { get; set; }
-
-        /// <summary>
-        /// 排序字段
-        /// </summary>
-        /// <value>The seq.</value>
-        public int Seq { get; set; }
 
         /// <summary>
         /// Code状态

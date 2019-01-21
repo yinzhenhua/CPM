@@ -19,6 +19,41 @@ namespace PMAPI.Migrations
                 .HasAnnotation("ProductVersion", "2.1.1-rtm-30846")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
+            modelBuilder.Entity("Domain.ActionGroup", b =>
+                {
+                    b.Property<string>("Key")
+                        .ValueGeneratedOnAdd()
+                        .HasMaxLength(32);
+
+                    b.Property<DateTime>("CreatedOn");
+
+                    b.Property<string>("GroupName")
+                        .IsRequired()
+                        .HasMaxLength(64);
+
+                    b.Property<string>("GroupStateKey");
+
+                    b.Property<string>("ProjectKey");
+
+                    b.Property<DateTime?>("RemovedOn");
+
+                    b.Property<int>("SEQ");
+
+                    b.Property<DateTime?>("UpdatedOn");
+
+                    b.Property<byte[]>("Version")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate();
+
+                    b.HasKey("Key");
+
+                    b.HasIndex("GroupStateKey");
+
+                    b.HasIndex("ProjectKey");
+
+                    b.ToTable("ActionGroup");
+                });
+
             modelBuilder.Entity("Domain.CodeMap", b =>
                 {
                     b.Property<string>("Key")
@@ -50,7 +85,7 @@ namespace PMAPI.Migrations
 
                     b.Property<DateTime?>("RemovedOn");
 
-                    b.Property<int>("Seq");
+                    b.Property<int>("SEQ");
 
                     b.Property<int>("Status");
 
@@ -66,6 +101,303 @@ namespace PMAPI.Migrations
                     b.HasKey("Key");
 
                     b.ToTable("CodeMaps");
+                });
+
+            modelBuilder.Entity("Domain.Project", b =>
+                {
+                    b.Property<string>("Key")
+                        .ValueGeneratedOnAdd()
+                        .HasMaxLength(32);
+
+                    b.Property<DateTime>("CreatedOn");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(64);
+
+                    b.Property<string>("ProjectStateKey");
+
+                    b.Property<DateTime?>("RemovedOn");
+
+                    b.Property<int>("SEQ");
+
+                    b.Property<string>("SecurityCode")
+                        .IsRequired()
+                        .HasMaxLength(32);
+
+                    b.Property<DateTime?>("UpdatedOn");
+
+                    b.Property<byte[]>("Version")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate();
+
+                    b.HasKey("Key");
+
+                    b.HasIndex("ProjectStateKey");
+
+                    b.HasIndex("SecurityCode");
+
+                    b.ToTable("Projects");
+                });
+
+            modelBuilder.Entity("Domain.ProjectAction", b =>
+                {
+                    b.Property<string>("Key")
+                        .ValueGeneratedOnAdd()
+                        .HasMaxLength(32);
+
+                    b.Property<string>("ActionName")
+                        .IsRequired()
+                        .HasMaxLength(32);
+
+                    b.Property<string>("ActionStateKey");
+
+                    b.Property<DateTime>("CreatedOn");
+
+                    b.Property<string>("GroupKey");
+
+                    b.Property<string>("ProjectMenuKey");
+
+                    b.Property<DateTime?>("RemovedOn");
+
+                    b.Property<int>("SEQ");
+
+                    b.Property<DateTime?>("UpdatedOn");
+
+                    b.Property<byte[]>("Version")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate();
+
+                    b.HasKey("Key");
+
+                    b.HasIndex("ActionStateKey");
+
+                    b.HasIndex("GroupKey");
+
+                    b.HasIndex("ProjectMenuKey");
+
+                    b.ToTable("ProjectAction");
+                });
+
+            modelBuilder.Entity("Domain.ProjectMenu", b =>
+                {
+                    b.Property<string>("Key")
+                        .ValueGeneratedOnAdd()
+                        .HasMaxLength(32);
+
+                    b.Property<DateTime>("CreatedOn");
+
+                    b.Property<string>("Display")
+                        .IsRequired()
+                        .HasMaxLength(64);
+
+                    b.Property<string>("MenuName")
+                        .IsRequired()
+                        .HasMaxLength(32);
+
+                    b.Property<string>("MenuStateKey");
+
+                    b.Property<string>("ParentKey");
+
+                    b.Property<string>("ProjectKey");
+
+                    b.Property<DateTime?>("RemovedOn");
+
+                    b.Property<int>("SEQ");
+
+                    b.Property<DateTime?>("UpdatedOn");
+
+                    b.Property<string>("Uri")
+                        .IsRequired()
+                        .HasMaxLength(255);
+
+                    b.Property<byte[]>("Version")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate();
+
+                    b.HasKey("Key");
+
+                    b.HasIndex("MenuStateKey");
+
+                    b.HasIndex("ParentKey");
+
+                    b.HasIndex("ProjectKey");
+
+                    b.ToTable("ProjectMenu");
+                });
+
+            modelBuilder.Entity("Domain.ProjectRole", b =>
+                {
+                    b.Property<string>("Key")
+                        .ValueGeneratedOnAdd()
+                        .HasMaxLength(32);
+
+                    b.Property<DateTime>("CreatedOn");
+
+                    b.Property<string>("ProjectKey");
+
+                    b.Property<DateTime?>("RemovedOn");
+
+                    b.Property<string>("RoleName")
+                        .IsRequired()
+                        .HasMaxLength(32);
+
+                    b.Property<string>("RoleStateKey");
+
+                    b.Property<int>("SEQ");
+
+                    b.Property<DateTime?>("UpdatedOn");
+
+                    b.Property<byte[]>("Version")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate();
+
+                    b.HasKey("Key");
+
+                    b.HasIndex("ProjectKey");
+
+                    b.HasIndex("RoleStateKey");
+
+                    b.ToTable("ProjectRole");
+                });
+
+            modelBuilder.Entity("Domain.RoleAction", b =>
+                {
+                    b.Property<string>("Key")
+                        .ValueGeneratedOnAdd()
+                        .HasMaxLength(32);
+
+                    b.Property<string>("ActionKey")
+                        .IsRequired()
+                        .HasMaxLength(32);
+
+                    b.Property<DateTime>("CreatedOn");
+
+                    b.Property<DateTime?>("RemovedOn");
+
+                    b.Property<string>("RoleKey")
+                        .IsRequired()
+                        .HasMaxLength(32);
+
+                    b.Property<int>("SEQ");
+
+                    b.Property<DateTime?>("UpdatedOn");
+
+                    b.Property<byte[]>("Version")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate();
+
+                    b.HasKey("Key");
+
+                    b.HasIndex("ActionKey");
+
+                    b.HasIndex("RoleKey");
+
+                    b.ToTable("RoleAction");
+                });
+
+            modelBuilder.Entity("Domain.SecurityKey", b =>
+                {
+                    b.Property<string>("Key")
+                        .ValueGeneratedOnAdd()
+                        .HasMaxLength(32);
+
+                    b.Property<DateTime>("CreatedOn");
+
+                    b.Property<DateTime?>("RemovedOn");
+
+                    b.Property<int>("SEQ");
+
+                    b.Property<string>("SecurityCode")
+                        .IsRequired()
+                        .HasMaxLength(64);
+
+                    b.Property<DateTime?>("UpdatedOn");
+
+                    b.Property<byte[]>("Version")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate();
+
+                    b.HasKey("Key");
+
+                    b.ToTable("SecurityKey");
+                });
+
+            modelBuilder.Entity("Domain.ActionGroup", b =>
+                {
+                    b.HasOne("Domain.CodeMap", "GroupState")
+                        .WithMany()
+                        .HasForeignKey("GroupStateKey");
+
+                    b.HasOne("Domain.Project")
+                        .WithMany("ActionGroups")
+                        .HasForeignKey("ProjectKey");
+                });
+
+            modelBuilder.Entity("Domain.Project", b =>
+                {
+                    b.HasOne("Domain.CodeMap", "ProjectState")
+                        .WithMany()
+                        .HasForeignKey("ProjectStateKey");
+
+                    b.HasOne("Domain.SecurityKey", "SecurityKey")
+                        .WithMany()
+                        .HasForeignKey("SecurityCode")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("Domain.ProjectAction", b =>
+                {
+                    b.HasOne("Domain.CodeMap", "ActionState")
+                        .WithMany()
+                        .HasForeignKey("ActionStateKey");
+
+                    b.HasOne("Domain.ActionGroup", "Group")
+                        .WithMany("Actions")
+                        .HasForeignKey("GroupKey");
+
+                    b.HasOne("Domain.ProjectMenu")
+                        .WithMany("Actions")
+                        .HasForeignKey("ProjectMenuKey");
+                });
+
+            modelBuilder.Entity("Domain.ProjectMenu", b =>
+                {
+                    b.HasOne("Domain.CodeMap", "MenuState")
+                        .WithMany()
+                        .HasForeignKey("MenuStateKey");
+
+                    b.HasOne("Domain.ProjectMenu", "Parent")
+                        .WithMany("Children")
+                        .HasForeignKey("ParentKey");
+
+                    b.HasOne("Domain.Project")
+                        .WithMany("Menus")
+                        .HasForeignKey("ProjectKey");
+                });
+
+            modelBuilder.Entity("Domain.ProjectRole", b =>
+                {
+                    b.HasOne("Domain.Project")
+                        .WithMany("Roles")
+                        .HasForeignKey("ProjectKey");
+
+                    b.HasOne("Domain.CodeMap", "RoleState")
+                        .WithMany()
+                        .HasForeignKey("RoleStateKey");
+                });
+
+            modelBuilder.Entity("Domain.RoleAction", b =>
+                {
+                    b.HasOne("Domain.ProjectAction", "Action")
+                        .WithMany("Roles")
+                        .HasForeignKey("ActionKey")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("Domain.ProjectRole", "Role")
+                        .WithMany("Actions")
+                        .HasForeignKey("RoleKey")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }

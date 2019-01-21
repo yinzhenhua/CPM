@@ -2,17 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b86ad22f-155c-43f7-9254-fa88329addfc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/PMService/Interfaces/CodeMapServices/IGetCodeMapService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PMService/Interfaces/CodeMapServices/IUpdateCodeStatusService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PMService/ViewModels/CodeMap/CodeMapViewModel4List.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PMWeb/Views/CodeMap/Create.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/ActionGroup.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/ProjectAction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/ProjectMenu.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/ProjectRole.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/RoleAction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/SecurityKey.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PMCore/IRepositories/IRepository4Project.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PMCore/Repositories/Repository4Project.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CommonPowerManager/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CommonPowerManager/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CommonPowerManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CommonPowerManager/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PMService/Services/CodeMapServices/FetchService4CodeMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PMService/Services/CodeMapServices/FetchService4CodeMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PMService/Services/CodeMapServices/ModifyService4CodeMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PMService/Services/CodeMapServices/ModifyService4CodeMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PMWeb/Controllers/CodeMapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/Controllers/CodeMapController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PMWeb/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PMWeb/Views/CodeMap/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/Views/CodeMap/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/BaseEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/BaseEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/CodeMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/CodeMap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/DataContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/DataContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Project.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Project.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMAPI/Migrations/DataContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PMAPI/Migrations/DataContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMCore/Repositories/Repository4CodeMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PMCore/Repositories/Repository4CodeMap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PMWeb/PMWeb.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PMWeb/PMWeb.csproj" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,159 +30,60 @@
     <session id="-1291774396">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="17" />
+          <entry key="cs" value="46" />
           <entry key="cshtml" value="10" />
-          <entry key="csproj" value="1" />
+          <entry key="csproj" value="9" />
           <entry key="sln" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="17" />
-          <entry key="Csproj" value="1" />
+          <entry key="C#" value="46" />
+          <entry key="Csproj" value="9" />
           <entry key="Razor" value="10" />
           <entry key="Solution File" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="1473" />
+          <entry key="cs" value="4326" />
           <entry key="cshtml" value="2511" />
-          <entry key="txt" value="61" />
+          <entry key="txt" value="76" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="1473" />
-          <entry key="PLAIN_TEXT" value="61" />
+          <entry key="C#" value="4326" />
+          <entry key="PLAIN_TEXT" value="76" />
           <entry key="Razor" value="2511" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PMWeb/Controllers/CodeMapController.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="70" column="30" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
-              <folding>
-                <marker date="1547986281736" expanded="false" signature="6:304" ph="..." />
-                <marker date="1547986281736" expanded="true" signature="447:2673" ph="{...}" />
-                <marker date="1547986281736" expanded="true" signature="497:2671" ph="{...}" />
-                <marker date="1547986281736" expanded="true" signature="1113:1393" ph="{...}" />
-                <marker date="1547986281736" expanded="true" signature="1431:1546" ph="{...}" />
-                <marker date="1547986281736" expanded="true" signature="1619:1791" ph="{...}" />
-                <marker date="1547986281736" expanded="true" signature="1876:2029" ph="{...}" />
-                <marker date="1547986281736" expanded="true" signature="2098:2272" ph="{...}" />
-                <marker date="1547986281736" expanded="true" signature="2347:2518" ph="{...}" />
-                <marker date="1547986281736" expanded="true" signature="2575:2665" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PMWeb/Startup.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="53" column="78" selection-start-line="53" selection-start-column="78" selection-end-line="53" selection-end-column="78" />
-              <folding>
-                <marker date="1547986231076" expanded="false" signature="6:587" ph="..." />
-                <marker date="1547986231076" expanded="true" signature="604:2980" ph="{...}" />
-                <marker date="1547986231076" expanded="true" signature="631:2978" ph="{...}" />
-                <marker date="1547986231076" expanded="true" signature="690:753" ph="{...}" />
-                <marker date="1547986231076" expanded="true" signature="976:2199" ph="{...}" />
-                <marker date="1547986231076" expanded="true" signature="1049:1326" ph="{...}" />
-                <marker date="1547986231076" expanded="true" signature="1477:1656" ph="{...}" />
-                <marker date="1547986231076" expanded="true" signature="2387:2972" ph="{...}" />
-                <marker date="1547986231076" expanded="true" signature="2434:2511" ph="{...}" />
-                <marker date="1547986231076" expanded="true" signature="2528:2643" ph="{...}" />
-                <marker date="1547986231076" expanded="true" signature="2786:2960" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PMService/Interfaces/CodeMapServices/IUpdateCodeStatusService.cs">
+        <entry file="file://$PROJECT_DIR$/PMService/Interfaces/CodeMapServices/IGetCodeMapService.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
-              <caret line="6" column="57" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+              <caret line="7" column="19" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="19" />
               <folding>
-                <marker date="1547986071979" expanded="true" signature="61:181" ph="{...}" />
-                <marker date="1547986071979" expanded="true" signature="109:179" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PMService/Services/CodeMapServices/ModifyService4CodeMap.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="56" column="42" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
-              <folding>
-                <marker date="1547986170493" expanded="false" signature="6:171" ph="..." />
-                <marker date="1547986170493" expanded="true" signature="217:2176" ph="{...}" />
-                <marker date="1547986170493" expanded="true" signature="306:2174" ph="{...}" />
-                <marker date="1547986170493" expanded="true" signature="447:512" ph="{...}" />
-                <marker date="1547986170493" expanded="true" signature="568:1126" ph="{...}" />
-                <marker date="1547986170493" expanded="true" signature="626:1073" ph="{...}" />
-                <marker date="1547986170493" expanded="true" signature="1194:1788" ph="{...}" />
-                <marker date="1547986170493" expanded="true" signature="1252:1735" ph="{...}" />
-                <marker date="1547986170493" expanded="true" signature="1853:2168" ph="{...}" />
-                <marker date="1547986170493" expanded="true" signature="2040:2113" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PMWeb/Views/CodeMap/Index.cshtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
-              <folding>
-                <marker date="1547986287769" expanded="true" signature="108:145" ph="@..." />
-                <marker date="1547986287769" expanded="true" signature="204:1108" ph="&lt;table.../&gt;" />
-                <marker date="1547986287769" expanded="true" signature="256:404" ph="&lt;thead.../&gt;" />
-                <marker date="1547986287769" expanded="true" signature="268:391" ph="&lt;tr.../&gt;" />
-                <marker date="1547986287769" expanded="true" signature="409:1099" ph="@..." />
-                <marker date="1547986287769" expanded="true" signature="426:1099" ph="{...}" />
-                <marker date="1547986287769" expanded="true" signature="441:1093" ph="&lt;tbody.../&gt;" />
-                <marker date="1547986287769" expanded="true" signature="457:1076" ph="@..." />
-                <marker date="1547986287769" expanded="true" signature="485:1076" ph="{...}" />
-                <marker date="1547986287769" expanded="true" signature="508:1066" ph="&lt;tr.../&gt;" />
-                <marker date="1547986287769" expanded="true" signature="693:1048" ph="&lt;td.../&gt;" />
-                <marker date="1547986287769" expanded="true" signature="718:1026" ph="@..." />
-                <marker date="1547986287769" expanded="true" signature="743:873" ph="{...}" />
-                <marker date="1547986287769" expanded="true" signature="898:1026" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PMService/ViewModels/CodeMap/CodeMapViewModel4List.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-              <folding>
-                <marker date="1547985392067" expanded="true" signature="38:357" ph="{...}" />
-                <marker date="1547985392067" expanded="true" signature="79:355" ph="{...}" />
+                <marker date="1547984116277" expanded="false" signature="6:69" ph="..." />
+                <marker date="1547984116277" expanded="true" signature="117:259" ph="{...}" />
+                <marker date="1547984116277" expanded="true" signature="159:257" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -185,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PMService/Services/CodeMapServices/FetchService4CodeMap.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
+            <state relative-caret-position="238">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <marker date="1547985402540" expanded="false" signature="6:224" ph="..." />
                 <marker date="1547985402540" expanded="true" signature="270:2097" ph="{...}" />
@@ -202,6 +109,15 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PMWeb/PMWeb.csproj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -210,6 +126,7 @@
         <option value="yinzhenhua" />
       </list>
     </option>
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -221,12 +138,26 @@
     <setting file="file://$PROJECT_DIR$/PMWeb/Views/CodeMap/Create.cshtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PMWeb/Controllers/CodeMapController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PMWeb/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/PMWeb/Views/CodeMap/Index.cshtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PMWeb/Views/Home/About.cshtml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/PMService/Interfaces/CodeMapServices/IUpdateCodeStatusService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/CodeMap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PMWeb/Views/Shared/_ValidationScriptsPartial.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/BaseEntity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/Project.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/DataContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PMWeb/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/CodeStatus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/SecurityKey.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/ProjectAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PMCore/Repositories/Repository4CodeMap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/ProjectRole.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PMCore/IRepositories/IRepository4CodeMap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/ActionGroup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PMWeb/Views/CodeMap/Index.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PMService/Interfaces/CodeMapServices/IUpdateCodeStatusService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/ProjectMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PMCore/Repositories/Repository4Project.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/RoleAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PMCore/IRepositories/IRepository4Project.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PMService/Services/CodeMapServices/ModifyService4CodeMap.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -242,6 +173,22 @@
         <option value="$PROJECT_DIR$/PMService/Services/CodeMapServices/ModifyService4CodeMap.cs" />
         <option value="$PROJECT_DIR$/PMWeb/Startup.cs" />
         <option value="$PROJECT_DIR$/PMWeb/Controllers/CodeMapController.cs" />
+        <option value="$PROJECT_DIR$/Domain/DataContext.cs" />
+        <option value="$PROJECT_DIR$/Domain/BaseEntity.cs" />
+        <option value="$PROJECT_DIR$/Domain/ActionGroup.cs" />
+        <option value="$PROJECT_DIR$/Domain/CodeMap.cs" />
+        <option value="$PROJECT_DIR$/Domain/Project.cs" />
+        <option value="$PROJECT_DIR$/Domain/ProjectMenu.cs" />
+        <option value="$PROJECT_DIR$/Domain/SecurityKey.cs" />
+        <option value="$PROJECT_DIR$/PMCore/Repositories/Repository4CodeMap.cs" />
+        <option value="$PROJECT_DIR$/Domain/RoleAction.cs" />
+        <option value="$PROJECT_DIR$/Domain/ProjectAction.cs" />
+        <option value="$PROJECT_DIR$/Domain/ProjectRole.cs" />
+        <option value="$PROJECT_DIR$/PMCore/Repositories/ProjectRepository.cs" />
+        <option value="$PROJECT_DIR$/PMCore/Repositories/Repository4Project.cs" />
+        <option value="$PROJECT_DIR$/PMCore/IRepositories/IRepository4Project.cs" />
+        <option value="$PROJECT_DIR$/PMService/Infrastructure/Pagin.cs" />
+        <option value="$PROJECT_DIR$/PMWeb/PMWeb.csproj" />
       </list>
     </option>
   </component>
@@ -251,7 +198,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="777" />
@@ -274,70 +221,7 @@
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="CommonPowerManager" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="PMService" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="CommonPowerManager" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="PMService" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Interfaces" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="CommonPowerManager" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="PMService" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Interfaces" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="CodeMapServices" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="CommonPowerManager" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="PMService" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Services" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="CommonPowerManager" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="PMService" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Services" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="CodeMapServices" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="CommonPowerManager" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="PMService" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="ViewModels" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="CommonPowerManager" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="PMService" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="ViewModels" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="CodeMap" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="CommonPowerManager" type="24d0babc:SolutionExplorerModelNode" />
               <item name="PMWeb" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="CommonPowerManager" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="PMWeb" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Controllers" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="CommonPowerManager" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="PMWeb" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Views" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="CommonPowerManager" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="PMWeb" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Views" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="CodeMap" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
@@ -403,7 +287,9 @@
       <workItem from="1547894342371" duration="665000" />
       <workItem from="1547897147285" duration="2357000" />
       <workItem from="1547948291953" duration="955000" />
-      <workItem from="1547956668098" duration="5910000" />
+      <workItem from="1547956668098" duration="6753000" />
+      <workItem from="1548026890085" duration="2598000" />
+      <workItem from="1548040202064" duration="1614000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始提交">
       <created>1547895767032</created>
@@ -440,11 +326,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547983626548</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="新增函数完成更新和List函数">
+      <created>1547986391476</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1547986391476</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11260000" />
+    <option name="totallyTimeSpent" value="16315000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -456,16 +349,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="777" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2657512" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26494345" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32846716" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -477,7 +370,7 @@
       <window_info anchor="bottom" id="REST Client" order="12" />
       <window_info anchor="bottom" id="Terminal" order="13" />
       <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50080776" side_tool="true" weight="0.329927" />
-      <window_info anchor="bottom" id="Build" order="15" weight="0.32846716" />
+      <window_info anchor="bottom" id="Build" order="15" visible="true" weight="0.32739726" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -496,7 +389,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="项目初始提交" />
     <MESSAGE value="更新Index页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新Index页面" />
+    <MESSAGE value="新增函数完成更新和List函数" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增函数完成更新和List函数" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -526,16 +420,6 @@
     <entry file="file://$PROJECT_DIR$/PMWeb/Views/Shared/_Layout.cshtml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Domain/CodeStatus.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PMWeb/PMWeb.csproj">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/CommonPowerManager.sln">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -550,39 +434,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PMService/Interfaces/CodeMapServices/IGetCodeMapService.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding>
-            <marker date="1547984116277" expanded="true" signature="6:69" ph="..." />
-            <marker date="1547984116277" expanded="true" signature="117:259" ph="{...}" />
-            <marker date="1547984116277" expanded="true" signature="159:257" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PMWeb/Views/CodeMap/Create.cshtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1044">
           <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
-          <folding>
-            <marker date="1547984445045" expanded="true" signature="94:133" ph="@..." />
-            <marker date="1547984445045" expanded="true" signature="157:2620" ph="&lt;div.../&gt;" />
-            <marker date="1547984445045" expanded="true" signature="179:2613" ph="&lt;div.../&gt;" />
-            <marker date="1547984445045" expanded="true" signature="210:2602" ph="&lt;form.../&gt;" />
-            <marker date="1547984445045" expanded="true" signature="330:603" ph="&lt;div.../&gt;" />
-            <marker date="1547984445045" expanded="true" signature="616:1324" ph="&lt;div.../&gt;" />
-            <marker date="1547984445045" expanded="true" signature="730:1225" ph="&lt;select.../&gt;" />
-            <marker date="1547984445045" expanded="true" signature="799:1199" ph="@..." />
-            <marker date="1547984445045" expanded="true" signature="935:1177" ph="{...}" />
-            <marker date="1547984445045" expanded="true" signature="1022:1151" ph="{...}" />
-            <marker date="1547984445045" expanded="true" signature="1337:1619" ph="&lt;div.../&gt;" />
-            <marker date="1547984445045" expanded="true" signature="1632:2082" ph="&lt;div.../&gt;" />
-            <marker date="1547984445045" expanded="true" signature="2095:2378" ph="&lt;div.../&gt;" />
-            <marker date="1547984445045" expanded="true" signature="2391:2586" ph="&lt;div.../&gt;" />
-            <marker date="1547984445045" expanded="true" signature="2621:2708" ph="@{...}" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PMWeb/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="53" column="78" selection-start-line="53" selection-start-column="78" selection-end-line="53" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PMService/Interfaces/CodeMapServices/IUpdateCodeStatusService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="57" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PMService/Services/CodeMapServices/ModifyService4CodeMap.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="56" column="42" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PMWeb/Views/CodeMap/Index.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -590,17 +473,216 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PMWeb/Controllers/CodeMapController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/CodeStatus.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/SecurityKey.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/Project.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/ActionGroup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/BaseEntity.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/CodeMap.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/DataContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/ProjectAction.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
           <folding>
-            <marker date="1547985392067" expanded="true" signature="38:357" ph="{...}" />
-            <marker date="1547985392067" expanded="true" signature="79:355" ph="{...}" />
+            <marker date="1548033064346" expanded="false" signature="6:104" ph="..." />
+            <marker date="1548033064346" expanded="true" signature="129:178" ph="/// 系统中的行为信息 ... " />
+            <marker date="1548033064346" expanded="true" signature="220:840" ph="{...}" />
+            <marker date="1548033064346" expanded="true" signature="257:321" ph="{...}" />
+            <marker date="1548033064346" expanded="true" signature="330:383" ph="/// 行为名称 ... " />
+            <marker date="1548033064346" expanded="true" signature="475:528" ph="/// 行为状态 ... " />
+            <marker date="1548033064346" expanded="true" signature="586:642" ph="/// 行为所属的分组 ... " />
+            <marker date="1548033064346" expanded="true" signature="708:766" ph="/// 行为对应的角色列表 ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/RoleAction.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+          <folding>
+            <marker date="1548033047826" expanded="true" signature="6:96" ph="..." />
+            <marker date="1548033047826" expanded="true" signature="157:482" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/ProjectMenu.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding>
+            <marker date="1548031916161" expanded="false" signature="6:97" ph="..." />
+            <marker date="1548031916161" expanded="true" signature="122:185" ph="/// 项目菜单配置，用以控制用户在操作过程中的行为 ... " />
+            <marker date="1548031916161" expanded="true" signature="225:1316" ph="{...}" />
+            <marker date="1548031916161" expanded="true" signature="260:373" ph="{...}" />
+            <marker date="1548031916161" expanded="true" signature="382:435" ph="/// 菜单名称 ... " />
+            <marker date="1548031916161" expanded="true" signature="525:580" ph="/// 菜单显示名称 ... " />
+            <marker date="1548031916161" expanded="true" signature="669:733" ph="/// URL,表示菜单名称或操作名称 ... " />
+            <marker date="1548031916161" expanded="true" signature="819:872" ph="/// 菜单状态 ... " />
+            <marker date="1548031916161" expanded="true" signature="928:981" ph="/// 上级菜单 ... " />
+            <marker date="1548031916161" expanded="true" signature="1046:1100" ph="/// 子菜单集合 ... " />
+            <marker date="1548031916161" expanded="true" signature="1180:1238" ph="/// 菜单对应的权限列表 ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PMCore/IRepositories/IRepository4CodeMap.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1547690515397" expanded="false" signature="6:77" ph="..." />
+            <marker date="1547690515397" expanded="true" signature="115:284" ph="{...}" />
+            <marker date="1547690515397" expanded="true" signature="179:282" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PMCore/Repositories/Repository4Project.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding>
+            <marker date="1548040428680" expanded="true" signature="6:84" ph="..." />
+            <marker date="1548040428680" expanded="true" signature="121:344" ph="{...}" />
+            <marker date="1548040428680" expanded="true" signature="242:342" ph="{...}" />
+            <marker date="1548040428680" expanded="true" signature="316:336" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/Domain.csproj">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PMAPI/PMAPI.csproj">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PMCore/PMRepository.csproj">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PMCore/IRepositories/IRepository4Project.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding>
+            <marker date="1548040460367" expanded="true" signature="6:47" ph="..." />
+            <marker date="1548040460367" expanded="true" signature="85:233" ph="{...}" />
+            <marker date="1548040460367" expanded="true" signature="92:148" ph="/// 项目服务的Repository ... " />
+            <marker date="1548040460367" expanded="true" signature="210:231" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/ProjectRole.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+          <folding>
+            <marker date="1548033071874" expanded="false" signature="6:78" ph="..." />
+            <marker date="1548033071874" expanded="true" signature="96:687" ph="{...}" />
+            <marker date="1548033071874" expanded="true" signature="103:150" ph="/// 系统中的角色 ... " />
+            <marker date="1548033071874" expanded="true" signature="190:685" ph="{...}" />
+            <marker date="1548033071874" expanded="true" signature="225:291" ph="{...}" />
+            <marker date="1548033071874" expanded="true" signature="300:353" ph="/// 角色名称 ... " />
+            <marker date="1548033071874" expanded="true" signature="443:496" ph="/// 角色状态 ... " />
+            <marker date="1548033071874" expanded="true" signature="552:610" ph="/// 角色对应的权限列表 ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PMCore/Repositories/Repository4CodeMap.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <marker date="1548032026018" expanded="false" signature="6:148" ph="..." />
+            <marker date="1548032026018" expanded="true" signature="185:633" ph="{...}" />
+            <marker date="1548032026018" expanded="true" signature="304:631" ph="{...}" />
+            <marker date="1548032026018" expanded="true" signature="378:398" ph="{...}" />
+            <marker date="1548032026018" expanded="true" signature="496:625" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PMService/PMService.csproj">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PMService/Infrastructure/Pagin.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PMService/Interfaces/CodeMapServices/IGetCodeMapService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="19" />
+          <folding>
+            <marker date="1547984116277" expanded="false" signature="6:69" ph="..." />
+            <marker date="1547984116277" expanded="true" signature="117:259" ph="{...}" />
+            <marker date="1547984116277" expanded="true" signature="159:257" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PMService/Services/CodeMapServices/FetchService4CodeMap.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
+        <state relative-caret-position="238">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
             <marker date="1547985402540" expanded="false" signature="6:224" ph="..." />
             <marker date="1547985402540" expanded="true" signature="270:2097" ph="{...}" />
@@ -615,95 +697,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PMWeb/Views/CodeMap/Index.cshtml">
+    <entry file="file://$PROJECT_DIR$/PMWeb/PMWeb.csproj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
-          <folding>
-            <marker date="1547986287769" expanded="true" signature="108:145" ph="@..." />
-            <marker date="1547986287769" expanded="true" signature="204:1108" ph="&lt;table.../&gt;" />
-            <marker date="1547986287769" expanded="true" signature="256:404" ph="&lt;thead.../&gt;" />
-            <marker date="1547986287769" expanded="true" signature="268:391" ph="&lt;tr.../&gt;" />
-            <marker date="1547986287769" expanded="true" signature="409:1099" ph="@..." />
-            <marker date="1547986287769" expanded="true" signature="426:1099" ph="{...}" />
-            <marker date="1547986287769" expanded="true" signature="441:1093" ph="&lt;tbody.../&gt;" />
-            <marker date="1547986287769" expanded="true" signature="457:1076" ph="@..." />
-            <marker date="1547986287769" expanded="true" signature="485:1076" ph="{...}" />
-            <marker date="1547986287769" expanded="true" signature="508:1066" ph="&lt;tr.../&gt;" />
-            <marker date="1547986287769" expanded="true" signature="693:1048" ph="&lt;td.../&gt;" />
-            <marker date="1547986287769" expanded="true" signature="718:1026" ph="@..." />
-            <marker date="1547986287769" expanded="true" signature="743:873" ph="{...}" />
-            <marker date="1547986287769" expanded="true" signature="898:1026" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PMService/Interfaces/CodeMapServices/IUpdateCodeStatusService.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="57" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
-          <folding>
-            <marker date="1547986071979" expanded="true" signature="61:181" ph="{...}" />
-            <marker date="1547986071979" expanded="true" signature="109:179" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PMService/Services/CodeMapServices/ModifyService4CodeMap.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="56" column="42" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
-          <folding>
-            <marker date="1547986170493" expanded="false" signature="6:171" ph="..." />
-            <marker date="1547986170493" expanded="true" signature="217:2176" ph="{...}" />
-            <marker date="1547986170493" expanded="true" signature="306:2174" ph="{...}" />
-            <marker date="1547986170493" expanded="true" signature="447:512" ph="{...}" />
-            <marker date="1547986170493" expanded="true" signature="568:1126" ph="{...}" />
-            <marker date="1547986170493" expanded="true" signature="626:1073" ph="{...}" />
-            <marker date="1547986170493" expanded="true" signature="1194:1788" ph="{...}" />
-            <marker date="1547986170493" expanded="true" signature="1252:1735" ph="{...}" />
-            <marker date="1547986170493" expanded="true" signature="1853:2168" ph="{...}" />
-            <marker date="1547986170493" expanded="true" signature="2040:2113" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PMWeb/Startup.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="53" column="78" selection-start-line="53" selection-start-column="78" selection-end-line="53" selection-end-column="78" />
-          <folding>
-            <marker date="1547986231076" expanded="false" signature="6:587" ph="..." />
-            <marker date="1547986231076" expanded="true" signature="604:2980" ph="{...}" />
-            <marker date="1547986231076" expanded="true" signature="631:2978" ph="{...}" />
-            <marker date="1547986231076" expanded="true" signature="690:753" ph="{...}" />
-            <marker date="1547986231076" expanded="true" signature="976:2199" ph="{...}" />
-            <marker date="1547986231076" expanded="true" signature="1049:1326" ph="{...}" />
-            <marker date="1547986231076" expanded="true" signature="1477:1656" ph="{...}" />
-            <marker date="1547986231076" expanded="true" signature="2387:2972" ph="{...}" />
-            <marker date="1547986231076" expanded="true" signature="2434:2511" ph="{...}" />
-            <marker date="1547986231076" expanded="true" signature="2528:2643" ph="{...}" />
-            <marker date="1547986231076" expanded="true" signature="2786:2960" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PMWeb/Controllers/CodeMapController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="70" column="30" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
-          <folding>
-            <marker date="1547986281736" expanded="false" signature="6:304" ph="..." />
-            <marker date="1547986281736" expanded="true" signature="447:2673" ph="{...}" />
-            <marker date="1547986281736" expanded="true" signature="497:2671" ph="{...}" />
-            <marker date="1547986281736" expanded="true" signature="1113:1393" ph="{...}" />
-            <marker date="1547986281736" expanded="true" signature="1431:1546" ph="{...}" />
-            <marker date="1547986281736" expanded="true" signature="1619:1791" ph="{...}" />
-            <marker date="1547986281736" expanded="true" signature="1876:2029" ph="{...}" />
-            <marker date="1547986281736" expanded="true" signature="2098:2272" ph="{...}" />
-            <marker date="1547986281736" expanded="true" signature="2347:2518" ph="{...}" />
-            <marker date="1547986281736" expanded="true" signature="2575:2665" ph="{...}" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>

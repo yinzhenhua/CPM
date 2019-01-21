@@ -36,5 +36,9 @@ namespace Domain
         /// </summary>
         /// <value>The removed on.</value>
         public DateTime? RemovedOn { get; set; }
+        /// <summary>
+        /// 排序字段
+        /// </summary>
+        public int SEQ { get; set; }
     }
 }
