@@ -1,0 +1,29 @@
+@using Microsoft.AspNetCore.Internal
+@model IEnumerable<PMService.ViewModels.Project.ProjectViewModel4List>
+@{
+    ViewData["Title"] = "项目列表";
+}
+<h2>系统字典</h2>
+<a asp-action="Create">创建项目</a>
+<hr />
+<table class="table table-striped table-hover">
+    <thead>
+    <tr>
+        <th>项目名称</th>
+        <th>项目状态</th>
+        <th></th>
+    </tr>
+    </thead>
+    @if (Model.Any())
+    {
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ProjectName</td>
+                <td>@item.ProjectState</td>
+            </tr>
+        }
+        </tbody>
+    }
+</table>

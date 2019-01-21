@@ -5,6 +5,7 @@ using Domain;
 using PMRepository.IRepositories;
 using PMService.Interfaces.CodeMapServices;
 using PMService.DTOs.CodeMap;
+using PMService.Infrastructure;
 using PMService.ViewModels.CodeMap;
 
 namespace PMService.Services.CodeMapServices
@@ -18,13 +19,13 @@ namespace PMService.Services.CodeMapServices
             _codeMapRepository = repository;
         }
 
-        public IEnumerable<CodeDetailDTO> GetByCategory(string category)
+        public IEnumerable<CodeDetail> GetByCategory(string category)
         {
             var queryable = _codeMapRepository.GetQueryable(x => x.Category == category && x.Status == Domain.CodeStatus.Active)
-                                              .Select(x => new CodeDetailDTO
+                                              .Select(x => new CodeDetail
                                               {
-                                                  Code = x.Code,
-                                                  CodeName = x.CodeName
+                                                  CodeKey = x.Key,
+                                                  CodeName = x.ChineseName
                                               }).ToList();
             return queryable;
 

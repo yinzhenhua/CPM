@@ -15,7 +15,9 @@ using PMRepository;
 using PMRepository.IRepositories;
 using PMRepository.Repositories;
 using PMService.Interfaces.CodeMapServices;
+using PMService.Interfaces.ProjectServices;
 using PMService.Services.CodeMapServices;
+using PMService.Services.ProjectServices;
 
 namespace PMWeb
 {
@@ -43,15 +45,20 @@ namespace PMWeb
             services.AddDbContext<DataContext>(options =>
             {
                 options.UseNpgsql(Configuration.GetConnectionString("Default"),
-                                  b => b.MigrationsAssembly("PMAPI"));
+                    b => b.MigrationsAssembly("PMAPI"));
             });
             services.AddScoped<IUnitOfWork<DataContext>, UnitOfWork<DataContext>>()
                 .AddScoped<IRepository4CodeMap, Repository4CodeMap<DataContext>>()
+                .AddScoped<IRepository4Project, Repository4Project<DataContext>>()
+                .AddScoped<IRepository4ActionGroup, Repository4ActionGroup<DataContext>>()
+                .AddScoped<IRepository4SecurityKey, Repository4SecurityKey<DataContext>>()
                 .AddScoped<IAddService4CodeMap, ModifyService4CodeMap>()
                 .AddScoped<IGetCategories, FetchService4CodeMap>()
                 .AddScoped<IGetCodeDetailService, FetchService4CodeMap>()
                 .AddScoped<IGetCodeMapService, FetchService4CodeMap>()
-                .AddScoped<IUpdateCodeStatusService, ModifyService4CodeMap>();
+                .AddScoped<IUpdateCodeStatusService, ModifyService4CodeMap>()
+                .AddScoped<IGetProjectService, FetchService4Project>()
+                .AddScoped<IAddProjectService, UpdateService4Project>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

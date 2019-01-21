@@ -64,8 +64,10 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="IRepositories" t="Include">
           <e p="IRepository.cs" t="Include" />
+          <e p="IRepository4ActionGroup.cs" t="Include" />
           <e p="IRepository4CodeMap.cs" t="Include" />
           <e p="IRepository4Project.cs" t="Include" />
+          <e p="IRepository4SecurityKey.cs" t="Include" />
         </e>
         <e p="IUnitOfWork.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
@@ -78,8 +80,10 @@
         <e p="PMRepository.csproj" t="IncludeRecursive" />
         <e p="Repositories" t="Include">
           <e p="Repository.cs" t="Include" />
+          <e p="Repository4ActionGroup.cs" t="Include" />
           <e p="Repository4CodeMap.cs" t="Include" />
           <e p="Repository4Project.cs" t="Include" />
+          <e p="Repository4SecurityKey.cs" t="Include" />
         </e>
         <e p="UnitOfWork.cs" t="Include" />
       </e>
@@ -87,9 +91,12 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="DTOs" t="Include">
           <e p="CodeMap" t="Include">
-            <e p="CodeDetailDTO.cs" t="Include" />
             <e p="CodeMap4AddDTO.cs" t="Include" />
           </e>
+        </e>
+        <e p="Infrastructure" t="Include">
+          <e p="CodeDetail.cs" t="Include" />
+          <e p="CommonConstant.cs" t="Include" />
         </e>
         <e p="Interfaces" t="Include">
           <e p="CodeMapServices" t="Include">
@@ -98,6 +105,10 @@
             <e p="IGetCodeDetailService.cs" t="Include" />
             <e p="IGetCodeMapService.cs" t="Include" />
             <e p="IUpdateCodeStatusService.cs" t="Include" />
+          </e>
+          <e p="ProjectServices" t="Include">
+            <e p="IAddProjectService.cs" t="Include" />
+            <e p="IGetProjectService.cs" t="Include" />
           </e>
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -113,11 +124,19 @@
             <e p="FetchService4CodeMap.cs" t="Include" />
             <e p="ModifyService4CodeMap.cs" t="Include" />
           </e>
+          <e p="ProjectServices" t="Include">
+            <e p="FetchService4Project.cs" t="Include" />
+            <e p="UpdateService4Project.cs" t="Include" />
+          </e>
         </e>
         <e p="ViewModels" t="Include">
           <e p="CodeMap" t="Include">
             <e p="CodeMapViewModel4Add.cs" t="Include" />
             <e p="CodeMapViewModel4List.cs" t="Include" />
+          </e>
+          <e p="Project" t="Include">
+            <e p="ProjectViewModel4Create.cs" t="Include" />
+            <e p="ProjectViewModel4List.cs" t="Include" />
           </e>
         </e>
       </e>
@@ -128,6 +147,7 @@
         <e p="Controllers" t="Include">
           <e p="CodeMapController.cs" t="Include" />
           <e p="HomeController.cs" t="Include" />
+          <e p="ProjectController.cs" t="Include" />
         </e>
         <e p="Infrastructure" t="Include" />
         <e p="Models" t="Include">
@@ -158,6 +178,10 @@
             <e p="Contact.cshtml" t="Include" />
             <e p="Index.cshtml" t="Include" />
             <e p="Privacy.cshtml" t="Include" />
+          </e>
+          <e p="Project" t="Include">
+            <e p="Create.cshtml" t="Include" />
+            <e p="Projects.cshtml" t="Include" />
           </e>
           <e p="Shared" t="Include">
             <e p="_CookieConsentPartial.cshtml" t="Include" />

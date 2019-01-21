@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using System.Linq.Expressions;
 using Domain;
 using Microsoft.EntityFrameworkCore;
 using PMRepository.IRepositories;
@@ -16,7 +18,7 @@ namespace PMRepository.Repositories
             _unitOfWork = uow;
         }
 
-        protected CTX Context => _unitOfWork.Context;
+        private CTX Context => _unitOfWork.Context;
         protected DbSet<T> Set => Context.Set<T>();
 
         public void Add(T item)
@@ -27,6 +29,11 @@ namespace PMRepository.Repositories
         public T Find(string key)
         {
             return Set.Find(key);
+        }
+
+        public IQueryable<T> GetQueryable(Expression<Func<T, bool>> expression = null)
+        {
+            return expression == null ? Set : Set.Where(expression);
         }
 
         public void Remove(string key)

@@ -13,10 +13,5 @@ namespace PMRepository.Repositories
         public Repository4CodeMap(IUnitOfWork<CTX> uow) : base(uow)
         {
         }
-
-        public IQueryable<CodeMap> GetQueryable(Expression<Func<CodeMap, bool>> expression=null)
-        {
-            return expression == null ? Set.OrderBy(x => x.SEQ) : Set.Where(expression).OrderBy(x => x.SEQ);
-        }
     }
 }

@@ -1,0 +1,46 @@
+@using Microsoft.EntityFrameworkCore.Internal
+@using PMService.Infrastructure
+@model PMService.ViewModels.Project.ProjectViewModel4Create
+
+@{
+    ViewData["Title"] = "创建系统项目";
+}
+
+<h2>新增系统字典</h2>
+<hr/>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ProjectName" class="control-label"></label>
+                <input type="text" asp-for="ProjectName" class="form-control"/>
+                <span asp-validation-for="ProjectName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectState" class="control-label"></label>
+                <select asp-for="ProjectState" class="form-control">
+                    @{
+                        var data = ViewData["codes"] as IEnumerable<CodeDetail>;
+                        if (data.Any())
+                        {
+                            foreach (var item in data)
+                            {
+                                <option value="@item.CodeKey">@item.CodeName</option>
+                            }
+                        }
+                    }
+                </select>
+                <span asp-validation-for="ProjectName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-default" value="保存"/>
+                <input type="reset" class="btn alert-danger" value="取消"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts{
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}
